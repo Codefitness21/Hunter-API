@@ -2,8 +2,11 @@
 const express = require("express");
 //can use all the methods that came with express 
 const app = express();
+const cors = require('cors')
 //Set up port we want it to be on.
 const PORT = 8000;
+
+app.use(cors())
 
 //simple json object. products is the object. products is the property that has the value of the object.
 const products = {
