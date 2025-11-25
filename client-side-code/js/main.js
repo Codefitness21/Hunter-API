@@ -8,7 +8,7 @@ async function apiRequest(){
 
         console.log(data)
         document.querySelector('h2').innerText = data.water
-        document.querySelector('h2').innerText = data.temp
+        document.querySelector('h3').innerText = data.temp
     }catch(error){
         console.log(error)
     }
